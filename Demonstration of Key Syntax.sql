@@ -9,7 +9,7 @@ unit_price,
 FROM products -- Specifies the table of interest
 WHERE unit_price >= 1 -- Only returns records the have a product unit_price greater than or equal to 1 -- Other operators include > (greater than), < (less than), <= (less than or equal to), = (equal to), != (not equal to), <> (not equal to)
 ORDER BY name, updated_price DESC -- Orders records alphabetically in ascending order by name, and then in descending order by updated_price
-LIMIT 2, 3; -- Skips the frist 2 records and returns only 3 records -- Useful for paginating results and also limiting to top items when sorting is also used
+LIMIT 2, 3; -- Skips the first 2 records and returns only 3 records -- Useful for paginating results and also limiting to top items when sorting is also used
 
 -- e.g. 2
 USE sql_store;
